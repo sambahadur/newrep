@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'python3 -m py_compile main.py'
+                sh 'python3 -m py_compile test_integer_sort.py'
             }
         }
 	stage('install pytest'){
